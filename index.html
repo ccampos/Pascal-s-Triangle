@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='PascalTriangleApp'>
+    <head>
+        <title>Pascal's Triangle by Claudio Campos</title>
+        <link rel='stylesheet' type='text/css' href='main.css'>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js'></script>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <h1>Pascal's Triangle</h1>
+        <h4>by Claudio Campos</h4>
+        <div ng-controller='TriangleController'>
+            <section>
+                <input type='text' placeholder='Number of Rows' ng-model='rowsInput'>
+                <button ng-click='displayNumberOfRows(); displayTriangle()'>Display Pascal's Triangle</button>
+                <div ng-repeat='row in rowsInput'>
+                    row
+                </div>
+            </section>
+            <section>
+            </section>
+        </div>
+    </body>
+</html>

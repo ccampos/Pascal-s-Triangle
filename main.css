@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+h1, h4 {
+    display: inline-block;
+}
+h1 {
+    margin-right: 15px;
+}
