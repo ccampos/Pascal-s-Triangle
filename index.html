@@ -12,9 +12,9 @@
         <div ng-controller='TriangleController'>
             <section>
                 <input type='text' placeholder='Number of Rows' ng-model='rowsInput'>
-                <button ng-click='displayNumberOfRows(); displayTriangle()'>Display Pascal's Triangle</button>
-                <div ng-repeat='row in rowsInput'>
-                    row
+                <button ng-click='displayTriangle()'>Display Pascal's Triangle</button>
+                <div>
+                    <div class='row' ng-repeat='row in rowsCollection'>{{row}}</div>
                 </div>
             </section>
             <section>
